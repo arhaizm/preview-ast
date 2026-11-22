@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Разрез траншеи в слоистом грунте</title>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#494a3b" stroke-width=".55" opacity=".17"/></pattern></defs>
+  <style>
+    .ground{fill:#c7c2ab} .strata,.soft{stroke:#494a3b;stroke-width:1.1;opacity:.62}
+    .heavy,.arrowhead{stroke:#494a3b;stroke-width:2.5} .paper{fill:#f5f4ec;stroke:#494a3b;stroke-width:1.65}
+    .node,.ochre{fill:#e2b649;stroke:#494a3b;stroke-width:1.4} .measure,.route{stroke:#494a3b;stroke-width:1.4;stroke-dasharray:4 3}
+    .tire{stroke:#494a3b;opacity:.83}
+  </style>
+  <path fill="#e8e5da" d="M0 0h420v210H0z"/><path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="ground" d="M0 160h253l11 35h59l14-35h83v50H0Z"/><path class="strata" d="M15 174h216m-67 10h68m116-11h58m-69 21h69"/><path class="measure" d="M263 99h68m-68-7v14m68-14v14m-68 8v26m68-26v26"/><path class="heavy" d="M242 148h15l12 37h50l15-37h21"/>
+</svg>

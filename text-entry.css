@@ -1,0 +1,14 @@
+/* Selected option 2; synchronized with the existing 1700ms machine entry. */
+.offer{--sweep:-42px}
+@keyframes text-cross{from{transform:translateX(var(--sweep));opacity:.08}to{transform:translateX(0);opacity:1}}
+@media(prefers-reduced-motion:no-preference){
+ html[data-motion-enabled] .bay.intro-on[data-textmotion=slide] .offer>:is(.kicker,h1,.intro,.actions){animation:text-cross 680ms 240ms cubic-bezier(.21,.69,.22,1) both}
+ html[data-motion-enabled] .bay.intro-on[data-textmotion=slide] .offer .kicker{--sweep:-17px;animation-duration:430ms}
+ html[data-motion-enabled] .bay.intro-on[data-textmotion=slide] .offer h1{animation-delay:320ms}
+ html[data-motion-enabled] .bay.intro-on[data-textmotion=slide] .offer .intro{--sweep:-23px;animation-delay:490ms;animation-duration:530ms}
+ html[data-motion-enabled] .bay.intro-on[data-textmotion=slide] .offer .actions{--sweep:-16px;animation-delay:690ms;animation-duration:470ms}
+}
+html[data-tab-hidden] .bay.intro-on .offer *{animation-play-state:paused!important}
+.bay.intro-on .offer .actions:focus-within{animation:none!important;opacity:1;filter:none;transform:none}
+@media(prefers-reduced-motion:reduce){.bay.intro-on .offer *{animation:none!important;filter:none!important;transform:none!important;opacity:1!important}}
+@media(max-width:640px){.offer{--sweep:-17px}html[data-motion-enabled] .bay.intro-on[data-textmotion=slide] .offer .intro{--sweep:-16px}}

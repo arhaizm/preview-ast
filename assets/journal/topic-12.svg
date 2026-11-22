@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Куча сыпучего материала и повтор маршрута</title>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#4b4438" stroke-width=".55" opacity=".17"/></pattern></defs>
+  <style>
+    .ground{fill:#c5bcaa} .strata,.soft{stroke:#4b4438;stroke-width:1.1;opacity:.62}
+    .heavy,.arrowhead{stroke:#4b4438;stroke-width:2.5} .paper{fill:#f5f4ec;stroke:#4b4438;stroke-width:1.65}
+    .node,.ochre{fill:#e2b649;stroke:#4b4438;stroke-width:1.4} .measure,.route{stroke:#4b4438;stroke-width:1.4;stroke-dasharray:4 3}
+    .tire{stroke:#4b4438;opacity:.83}
+  </style>
+  <path fill="#e5e1d8" d="M0 0h420v210H0z"/><path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="ground" d="M0 175h420v35H0Z"/><path class="ochre" d="m242 155 30-24 13-6 20-26 13 17 12 1 37 38Z"/><path class="soft" d="m258 154 28-20m4 9 13-16 11 12m8-5 14 12"/><path class="route" d="M231 99c-18-41 91-66 127-15"/><path class="arrowhead" d="m347 81 15 9 1-16"/>
+</svg>

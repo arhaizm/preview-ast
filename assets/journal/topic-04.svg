@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Циферблат и маршрут смены</title>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#4b4438" stroke-width=".55" opacity=".17"/></pattern></defs>
+  <style>
+    .ground{fill:#c5bcaa} .strata,.soft{stroke:#4b4438;stroke-width:1.1;opacity:.62}
+    .heavy,.arrowhead{stroke:#4b4438;stroke-width:2.5} .paper{fill:#f5f4ec;stroke:#4b4438;stroke-width:1.65}
+    .node,.ochre{fill:#e2b649;stroke:#4b4438;stroke-width:1.4} .measure,.route{stroke:#4b4438;stroke-width:1.4;stroke-dasharray:4 3}
+    .tire{stroke:#4b4438;opacity:.83}
+  </style>
+  <path fill="#e5e1d8" d="M0 0h420v210H0z"/><path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="soft" d="M0 161h420M0 178h420"/><g transform="translate(113 98)"><circle class="paper" r="62"/><circle class="soft" r="52"/><path class="heavy" d="M0-48v7m48 41h-7M0 48v-7m-48-41h7"/><path class="heavy" d="M0-35V0l26 12"/><circle r="5" fill="#d7a715"/></g><g transform="translate(208 71)"><path class="heavy" d="M0 16h52v37h54V19h53"/><circle class="node" cx="0" cy="16" r="6"/><circle class="node" cx="52" cy="53" r="6"/><circle class="node" cx="106" cy="19" r="6"/><path class="soft" d="M0 75h174m-174 8h118"/></g>
+</svg>

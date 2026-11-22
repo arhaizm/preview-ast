@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Треугольник длины, высоты и вылета</title>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#344a40" stroke-width=".55" opacity=".17"/></pattern></defs>
+  <style>
+    .ground{fill:#b6c3b8} .strata,.soft{stroke:#344a40;stroke-width:1.1;opacity:.62}
+    .heavy,.arrowhead{stroke:#344a40;stroke-width:2.5} .paper{fill:#f5f4ec;stroke:#344a40;stroke-width:1.65}
+    .node,.ochre{fill:#e2b649;stroke:#344a40;stroke-width:1.4} .measure,.route{stroke:#344a40;stroke-width:1.4;stroke-dasharray:4 3}
+    .tire{stroke:#344a40;opacity:.83}
+  </style>
+  <path fill="#dfe6e2" d="M0 0h420v210H0z"/><path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="ground" d="M0 175h420v35H0Z"/><path class="paper" d="m241 156 113-109v109Z"/><path class="measure" d="M238 168h123m-123-5v10m123-10v10m8-126v109m-5-109h10m-10 109h10"/><path class="heavy" d="m241 156 113-109"/><circle class="node" cx="241" cy="156" r="6"/><path class="soft" d="M339 156v-13h15"/>
+</svg>

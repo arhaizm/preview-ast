@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>След колеса и гусеницы на двух покрытиях</title>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#494a3b" stroke-width=".55" opacity=".17"/></pattern></defs>
+  <style>
+    .ground{fill:#c7c2ab} .strata,.soft{stroke:#494a3b;stroke-width:1.1;opacity:.62}
+    .heavy,.arrowhead{stroke:#494a3b;stroke-width:2.5} .paper{fill:#f5f4ec;stroke:#494a3b;stroke-width:1.65}
+    .node,.ochre{fill:#e2b649;stroke:#494a3b;stroke-width:1.4} .measure,.route{stroke:#494a3b;stroke-width:1.4;stroke-dasharray:4 3}
+    .tire{stroke:#494a3b;opacity:.83}
+  </style>
+  <path fill="#e8e5da" d="M0 0h420v210H0z"/><path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="ground" d="M0 174h223l33-26h164v62H0Z"/><g transform="translate(250 38) skewY(-9)"><rect class="paper" x="0" y="0" width="129" height="108"/><path class="soft" d="M12 54h105"/><g class="tire" stroke-width="6"><path d="m13 16 8 8-8 8m17-16 8 8-8 8m17-16 8 8-8 8m17-16 8 8-8 8m17-16 8 8-8 8m17-16 8 8-8 8"/><path d="M14 75v13m13-13v13m13-13v13m13-13v13m13-13v13m13-13v13m13-13v13m13-13v13"/></g></g>
+</svg>

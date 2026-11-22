@@ -1,0 +1,131 @@
+/* Adjustments to the V7 design for the V9 review. */
+.featured[data-arm-type="crane"] .arm-plane {
+  transform: translateX(-50%) scale(1.31);
+  transform-origin: 50% 100%;
+  bottom: -3%;
+}
+.family-label p { margin-top:3px; font-size:13px; color:var(--muted); }
+.family dl>div:has(>dt:only-child) { grid-template-columns:1fr; }
+.family dl dd:empty { display:none; }
+.rent-info>p:not(.kicker) { max-width:40ch; color:#d2d7d8; margin-top:15px; }
+.rate-call { margin-top:22px; }
+.fleet-band,.capabilities { display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,6vw,100px); }
+.fleet-identity { min-width:0; }
+.fleet-identity .kicker { gap:9px; }
+.fleet-identity h2 { max-width:17ch; }
+.fleet-description { margin-top:14px; max-width:46ch; color:var(--muted); font-size:clamp(16px,1.25vw,20px); line-height:1.45; }
+.fleet-detail {
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  margin-top:22px;
+  aspect-ratio:1200 / 668;
+  background:#f1f2ef;
+}
+.fleet-detail img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+.fleet-image-note {
+  position:absolute;
+  right:7px;
+  bottom:7px;
+  padding:3px 6px;
+  background:rgba(255,255,255,.88);
+  color:#4c5450;
+  font-size:10px;
+  line-height:1.2;
+}
+.order-flow { align-self:center; }
+.order-flow h3 { margin-bottom:21px; }
+.order-flow ol { list-style:none; counter-reset:step; padding:0; margin:0; }
+.order-flow li { counter-increment:step; position:relative; border-top:1px solid var(--line); padding:14px 0 16px 40px; }
+.order-flow li:before { content:counter(step,decimal-leading-zero); position:absolute; left:0; top:17px; font:700 12px/1.2 var(--font); color:var(--muted); }
+.order-flow b { font-size:20px; letter-spacing:-.035em; }
+.order-flow p { font-size:15px; color:var(--muted); margin-top:3px; }
+.capabilities { border-bottom:1px solid var(--line); }
+.cap-description .lead { margin-top:15px; max-width:35ch; }
+.cap-data>div { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.55fr); gap:15px; padding:13px 0; border-top:1px solid var(--line); }
+.cap-data dt { font-weight:740; }.cap-data dd { color:var(--muted); }
+.wrap.block.order { border-top:1px solid var(--line); }
+.journal-head { align-items:end; }
+.journal-all { display:inline-flex; gap:12px; align-items:center; min-height:44px; font-size:15px; font-weight:730; white-space:nowrap; }
+.journal-all span { color:var(--ink); font-size:20px; }
+.journal-all:hover,.story-entry:hover .story-name { text-decoration:underline; text-underline-offset:4px; }
+.journal-cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px 24px; padding-top:22px; }
+.story-entry { display:block; height:100%; border-bottom:1px solid var(--line); padding-bottom:16px; }
+.story-art { aspect-ratio:2/1; display:block; position:relative; isolation:isolate; overflow:hidden; background:#e1e6e5; }
+.story-art .scene { position:absolute; inset:0; width:100%; height:100%; object-fit:fill; }
+.story-art .machine { position:absolute; bottom:14%; left:6%; width:var(--vehicle-width,51%); height:75%; object-fit:contain; object-position:center bottom; }
+.story-art .support { left:auto; right:6%; bottom:17%; width:40%; height:62%; }
+.story-text { display:block; padding-top:13px; }
+.story-entry .kicker { margin-bottom:6px; font-size:11px; }
+.story-name { margin:0; font-size:clamp(20px,1.65vw,28px); line-height:1.19; letter-spacing:-.038em; }
+.hub-head { padding-block:clamp(26px,4vw,66px) clamp(18px,2vw,32px); border-bottom:2px solid var(--ink); }
+.hub-head h1 { max-width:19ch; font-size:clamp(41px,5.2vw,82px); line-height:1.02; }
+.hub-grid { padding-bottom:clamp(36px,5vw,80px); }
+.story-intro .story-art { width:100%; }
+.topic-preview { max-width:70ch; }
+.topic-preview h2 { font-size:clamp(26px,3vw,38px); }
+.topic-preview p { margin:12px 0 18px; color:var(--muted); }
+@media(max-width:920px) {
+  .journal-cards { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .home-stories { display:block; padding-top:0; }
+  .home-stories .story-entry { display:grid; grid-template-columns:minmax(150px,.8fr) minmax(0,1.8fr); gap:22px; padding-block:15px; align-items:center; }
+  .home-stories .story-text { padding-top:0; }
+  .fleet-band,.capabilities { gap:28px; }
+}
+@media(max-width:640px) {
+  .journal-head { display:flex; align-items:end; }
+  .journal-head .kicker { font-size:11px; }
+  .journal-all { font-size:14px; gap:4px; }
+  .journal-cards { display:grid; grid-template-columns:1fr; gap:21px; }
+  .home-stories { gap:0; }
+  .home-stories .story-entry { grid-template-columns:minmax(85px,30%) minmax(0,1fr); gap:12px; }
+  .home-stories .story-art { aspect-ratio:1.55; }
+  .home-stories .story-name { font-size:18px; }
+  .story-entry .kicker { letter-spacing:.055em; line-height:1.32; }
+  .card-heading .kicker,.fact small,.family-label p,.motion-switch { font-size:11px; }
+  .fleet-band,.capabilities { grid-template-columns:1fr; gap:24px; }
+  .fleet-detail { margin-top:17px; }
+  .fleet-description { margin-top:10px; }
+  .order-flow li { padding-left:32px; }
+  .cap-data>div { font-size:15px; gap:10px; }
+  .motion-toolbar { top:auto; bottom:calc(clamp(199px,55vw,306px) - var(--deck) - 42px); }
+}
+@media(max-width:360px) {
+  .featured { grid-template-columns:minmax(0,1.32fr) minmax(0,1fr); }
+  .card-heading { padding-left:10px; }.fact { padding-left:10px; }
+  .card-heading h3 { font-size:18px; }
+  .journal-head { display:block; }.journal-all { margin-top:3px; }
+}
+@media(min-width:641px) {
+  .rent-grid { row-gap:22px; }
+  .rent-info { grid-row:1; }
+  .rent-metrics { grid-row:1 / span 2; }
+  .rate-call { grid-column:1 / span 5; grid-row:2; justify-self:start; align-self:start; margin-top:0; }
+}
+@media(max-width:340px) {
+  .featured[data-arm-type="excavator"] { grid-template-columns:minmax(min-content,1.75fr) minmax(0,1fr); }
+  .featured[data-arm-type="excavator"] h3 { overflow-wrap:normal; }
+}
+
+/* Align the company headings and the bottoms of both desktop columns. */
+@media(min-width:641px) {
+  .fleet-band > .order-flow {
+    align-self:stretch;
+    display:flex;
+    flex-direction:column;
+    padding-top:27px;
+  }
+  .fleet-band > .order-flow ol {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    border-bottom:1px solid var(--line);
+  }
+  .fleet-band > .order-flow li { flex:1; }
+}

@@ -1,0 +1,66 @@
+/* Свет и тонкие профили расположены на задней стене. */
+.bay-wall .moving-light{position:absolute;inset:-30% -12% -20% 34%;background:linear-gradient(112deg,transparent 18%,#d3e6eb0b 29%,#dcecf42b 38%,#f7f9e752 45%,#dce8ee24 51%,transparent 66%);transform:translateX(-12%);pointer-events:none}
+.ceiling-lines{position:absolute;inset:0 0 0 auto;width:65%;height:100%;opacity:.97;clip-path:inset(0 0 0 18%)}
+.ceiling-lines path{vector-effect:non-scaling-stroke;stroke-linecap:round}
+.rails path{stroke:#d4dddc;stroke-width:1.2;opacity:.44}
+.travel path{stroke:#f5f8ec;stroke-width:2.3;stroke-dasharray:20 80;stroke-dashoffset:19;opacity:.9}
+.travel path:nth-child(2){stroke:#ffdc62;stroke-width:2;stroke-dasharray:10 90;stroke-dashoffset:24}
+.travel path:nth-child(3){stroke:#d9e6eb;stroke-width:1.6;stroke-dasharray:14 86;stroke-dashoffset:30}
+.motion-toolbar{position:absolute;z-index:3;top:8px;right:var(--side)}
+.motion-toolbar[hidden],.motion-review[hidden]{display:none}
+.motion-switch,.replay-button,.review-check{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 12px/1.25 var(--font)}
+.motion-switch{background:#111819e8;border:1px solid #99a4a6;border-radius:2px;color:#fff;padding:0 13px;cursor:pointer}
+.motion-switch:hover{border-color:white}
+.motion-switch[disabled],.replay-button[disabled]{cursor:default;opacity:.85}
+.motion-symbol{height:12px;width:12px;display:block;position:relative;background:linear-gradient(90deg,#fff 0 3px,transparent 3px 7px,#fff 7px 10px,transparent 10px)}
+.motion-switch[aria-pressed=false] .motion-symbol{background:none}
+.motion-switch[aria-pressed=false] .motion-symbol:before{content:"";position:absolute;left:2px;top:0;border-left:9px solid white;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.motion-switch:disabled .motion-symbol{display:none}
+html[data-motion-ready] .bay-wall .moving-light{animation:wall-light 6s ease-in-out infinite alternate;animation-play-state:paused}
+html[data-motion-ready] .travel path{animation:rail-light 5.8s linear infinite;animation-play-state:paused}
+html[data-motion-ready] .travel path:nth-child(2){animation-delay:-1.05s}
+html[data-motion-ready] .travel path:nth-child(3){animation-delay:-2.1s}
+html[data-ambient-running] .bay-wall .moving-light,html[data-ambient-running] .travel path{animation-play-state:running}
+@keyframes wall-light{from{transform:translateX(-24%);opacity:.76}to{transform:translateX(28%);opacity:1}}
+@keyframes rail-light{from{stroke-dashoffset:26}to{stroke-dashoffset:-74}}
+@keyframes plant-machine{from{transform:translateX(100vw);opacity:1}to{transform:translateX(0);opacity:1}}
+@keyframes section-appear{from{transform:translateY(8px);opacity:.87}to{transform:translateY(0);opacity:1}}
+@keyframes draw-label{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes pinpoint{from{opacity:.08}to{opacity:1}}
+html[data-motion-enabled] .intro-on .hero-machine{animation:plant-machine var(--entry-duration,1.7s) cubic-bezier(.22,.72,.25,1) both}
+html[data-motion-enabled] .reveal-on{animation:section-appear .46s cubic-bezier(.22,.72,.25,1) both}
+html[data-motion-enabled] .trace-on .leaders path{stroke-dasharray:1;animation:draw-label .66s ease-out both}
+html[data-motion-enabled] .trace-on .leaders path:nth-of-type(2){animation-delay:.23s}
+html[data-motion-enabled] .trace-on .leaders circle{animation:pinpoint .16s .55s linear both}
+html[data-motion-enabled] .trace-on .leaders circle:last-child{animation-delay:.78s}
+html[data-tab-hidden] :is(.intro-on .hero-machine,.reveal-on,.trace-on .leaders path,.trace-on .leaders circle){animation-play-state:paused}
+.featured{overflow:hidden}
+.featured .fact{position:relative}
+.featured .fact:after{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:#9a8100;transform:scaleX(0);transform-origin:left center}
+html[data-motion-enabled] .featured .fact:after{transition:transform .26s}
+html[data-motion-enabled] .product-shot img{transition:transform .28s ease-out}
+@media(hover:hover){html[data-motion-enabled] .featured:hover .product-shot img{transform:translateY(-3px) scale(1.025)}.featured:hover .fact:after{transform:scaleX(1)}}
+html[data-motion-enabled] .featured:focus-visible .product-shot img{transform:translateY(-3px) scale(1.025)}
+.featured:focus-visible .fact:after{transform:scaleX(1)}
+.motion-review{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;padding:5px var(--side);background:#eaf0f1;color:#172024;border-bottom:1px solid #bdc9ca}
+.motion-review strong{font-size:13px}
+.replay-button,.review-check,.motion-review a{display:inline-flex;align-items:center;min-height:44px}
+.replay-button{background:white;border:1px solid #718084;padding:6px 12px;color:#172024}
+.review-check{cursor:pointer;gap:7px}.review-check input{margin:0;width:17px;height:17px;accent-color:#172024}
+.motion-review a{font-size:13px;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:640px){.ceiling-lines{width:100%;height:calc(clamp(199px,55vw,306px) - var(--deck) - 16px);top:auto;bottom:0;clip-path:none}.bay-wall .moving-light{inset:28% -29% -10% 0}.motion-toolbar{top:8px}.motion-switch{min-width:68px;padding:0 8px;font-size:11px}.motion-review{gap:4px 12px}.motion-review strong{display:none}}
+@media(prefers-reduced-motion:reduce){html .bay-wall .moving-light,html .travel path,html .hero-machine,html .reveal-on,html .leaders path,html .leaders circle,html .product-shot img,html .featured .fact:after{animation:none!important;transition:none!important}.leaders path{stroke-dasharray:none!important;stroke-dashoffset:0!important}}
+html[data-review-reduced] *{animation:none!important;transition:none!important}
+html[data-review-reduced] .leaders path{stroke-dasharray:none!important;stroke-dashoffset:0!important}
+.motion-index{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:center;background:var(--dark);color:#fff;padding:clamp(20px,3vw,40px);margin:0 0 22px}
+.motion-index .kicker{color:#d6dfe0}.motion-index h2{font-size:clamp(30px,3vw,48px)}.motion-index p:not(.kicker){margin-top:10px;max-width:56ch;color:#d5dcdd}
+.motion-index nav{justify-self:end;display:flex;align-items:flex-start;flex-direction:column;gap:4px}
+@media(max-width:750px){.motion-index{grid-template-columns:1fr}.motion-index nav{justify-self:start}}
+/* Въезд из-за правого края без горизонтальной прокрутки; площадка остаётся видимой по Y. */
+.bay{overflow-x:clip;overflow-y:visible}
+
+
+.wheel-plane{position:absolute;bottom:0;left:50%;transform:translateX(-50%);pointer-events:none;z-index:1}
+.wheel-plane canvas{position:absolute;display:block}
+.wheel-plane[hidden],html:not([data-motion-enabled]) .wheel-plane{display:none!important}
+@media(prefers-reduced-motion:reduce){.wheel-plane{display:none!important}}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Комплект документов и отмеченные поля</title>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#494a3b" stroke-width=".55" opacity=".17"/></pattern></defs>
+  <style>
+    .ground{fill:#c7c2ab} .strata,.soft{stroke:#494a3b;stroke-width:1.1;opacity:.62}
+    .heavy,.arrowhead{stroke:#494a3b;stroke-width:2.5} .paper{fill:#f5f4ec;stroke:#494a3b;stroke-width:1.65}
+    .node,.ochre{fill:#e2b649;stroke:#494a3b;stroke-width:1.4} .measure,.route{stroke:#494a3b;stroke-width:1.4;stroke-dasharray:4 3}
+    .tire{stroke:#494a3b;opacity:.83}
+  </style>
+  <path fill="#e8e5da" d="M0 0h420v210H0z"/><path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <g transform="translate(91 18) rotate(-9 98 85)"><path class="ground" d="M8 12h124v153H8Z"/><path class="paper" d="M0 0h125v154H0Z"/><path class="soft" d="M16 26h76m-76 12h42m-42 23h88m-88 12h81m-81 12h63"/></g><g transform="translate(190 37) rotate(6 74 65)"><path class="paper" d="M0 0h98l24 24v122H0Z"/><path class="soft" d="M98 0v24h24"/><path class="heavy" d="M17 33h48"/><path class="soft" d="M40 57h60M40 79h51M40 101h62"/><path class="ochre" d="M16 49h14v14H16Zm0 22h14v14H16Zm0 22h14v14H16Z"/><path class="heavy" d="m18 54 4 4 9-10m-13 28 4 4 9-10"/></g>
+</svg>

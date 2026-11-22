@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Экскаватор и самосвал между площадками</title>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#344852" stroke-width=".55" opacity=".17"/></pattern></defs>
+  <style>
+    .ground{fill:#aebfc5} .strata,.soft{stroke:#344852;stroke-width:1.1;opacity:.62}
+    .heavy,.arrowhead{stroke:#344852;stroke-width:2.5} .paper{fill:#f5f4ec;stroke:#344852;stroke-width:1.65}
+    .node,.ochre{fill:#e2b649;stroke:#344852;stroke-width:1.4} .measure,.route{stroke:#344852;stroke-width:1.4;stroke-dasharray:4 3}
+    .tire{stroke:#344852;opacity:.83}
+  </style>
+  <path fill="#dce5e8" d="M0 0h420v210H0z"/><path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="ground" d="M0 169l110-9 100 2 113-14 97 15v47H0Z"/><path class="route" d="M83 180c61 20 183 9 219-12"/><path class="arrowhead" d="m299 161 13 3-8 12"/><path class="soft" d="M32 78l32-19 22 8m237-3 36-16 40 13"/>
+</svg>

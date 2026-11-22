@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Земля в разрезе и котлован</title>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#344a40" stroke-width=".55" opacity=".17"/></pattern></defs>
+  <style>
+    .ground{fill:#b6c3b8} .strata,.soft{stroke:#344a40;stroke-width:1.1;opacity:.62}
+    .heavy,.arrowhead{stroke:#344a40;stroke-width:2.5} .paper{fill:#f5f4ec;stroke:#344a40;stroke-width:1.65}
+    .node,.ochre{fill:#e2b649;stroke:#344a40;stroke-width:1.4} .measure,.route{stroke:#344a40;stroke-width:1.4;stroke-dasharray:4 3}
+    .tire{stroke:#344a40;opacity:.83}
+  </style>
+  <path fill="#dfe6e2" d="M0 0h420v210H0z"/><path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="ground" d="M0 169H220l21 27h44l24-27h111v42H0Z"/><path class="strata" d="M210 178h-77m186 0h88m-81 9h65M9 188h129"/><path class="heavy" d="M229 155h16l17 22h17l16-22h18"/><path class="measure" d="M348 158v38m-7-38h14m-14 38h14"/><path class="soft" d="M244 85l50-24 34 8 39-17 54 12"/><path class="soft" d="M253 98l43-21 30 8 41-17 54 11"/>
+</svg>
