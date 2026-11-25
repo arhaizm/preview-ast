@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Проектные отметки и профиль выемки под пруд</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#354a42" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#354a42;stroke-width:1.65}
+    .wash{fill:#b6c4b6}
+    .accent{fill:#e2b649;stroke:#354a42;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#354a42;stroke-width:1.2}
+    .line{stroke:#354a42;stroke-width:1.65}
+    .strong{stroke:#354a42;stroke-width:2.5}
+    .route{stroke:#354a42;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#354a42;stroke-width:1.1;opacity:.62}
+    .dot{fill:#354a42}
+    text{fill:#354a42;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e2e8e1" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="paper" d="M41 55h145v100H41z"/>
+  <path class="line" d="M54 111q1-29 29-31t32-12q36-8 58 19l-7 37q-21 24-55 18-22 4-43-9z"/>
+  <path class="water" d="M73 110q1-18 21-20t26-9q27-4 40 14l-5 21q-18 18-43 13-30 6-39-19z"/>
+  <path class="route" d="M49 110h129m2 0h45"/>
+  <path class="wash" d="M229 91h21l15 17h18l17 36h28l18-36h18l15-17h11v69H229z"/>
+  <path class="water" d="M265 109h81l-18 35h-28l-17-36z"/>
+  <path class="line" d="M229 91h21l15 17h18l17 36h28l18-36h18l15-17h11"/>
+  <path class="route" d="M259 91h104m-90 17h78m-62 36h65"/>
+  <text x="111" y="178">План чаши</text>
+  <text x="311" y="178">Проектные отметки</text>
+</svg>

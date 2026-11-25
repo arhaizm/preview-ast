@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Грунтовый подъезд, ворота и место разворота манипулятора</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#4a493c" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#4a493c;stroke-width:1.65}
+    .wash{fill:#c8c5b3}
+    .accent{fill:#e2b649;stroke:#4a493c;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#4a493c;stroke-width:1.2}
+    .line{stroke:#4a493c;stroke-width:1.65}
+    .strong{stroke:#4a493c;stroke-width:2.5}
+    .route{stroke:#4a493c;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#4a493c;stroke-width:1.1;opacity:.62}
+    .dot{fill:#4a493c}
+    text{fill:#4a493c;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e8e7df" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="wash" d="M31 149q89 19 125-22t69-41l52 6V55h108v106H277v-39l-53-6q-32 2-69 36T31 177z"/>
+  <path class="line" d="M31 149q89 19 125-22t69-41l52 6m0 30-53-6q-32 2-69 36T31 177m246-45v29h108V55H277v27m0 0h18m-18 50h18"/>
+  <path class="route" d="M53 164q95 4 120-37t96-24h46q40-27 51-3t-39 33m9-9-9 9 13 3"/>
+  <path class="accent" d="M263 85h9v11h-9zm0 32h9v11h-9z"/>
+  <path class="soft" d="m102 140 16-14m-28 56 17 6m82-101 6-17"/>
+</svg>

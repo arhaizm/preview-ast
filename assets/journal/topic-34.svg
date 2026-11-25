@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Гидромолот и участок твёрдого грунта на условной площадке</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#354a42" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#354a42;stroke-width:1.65}
+    .wash{fill:#b6c4b6}
+    .accent{fill:#e2b649;stroke:#354a42;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#354a42;stroke-width:1.2}
+    .line{stroke:#354a42;stroke-width:1.65}
+    .strong{stroke:#354a42;stroke-width:2.5}
+    .route{stroke:#354a42;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#354a42;stroke-width:1.1;opacity:.62}
+    .dot{fill:#354a42}
+    text{fill:#354a42;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e2e8e1" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="wash" d="M34 145h133l14-35 18 8 32-11 51 35h104v41H34z"/>
+  <path class="line" d="M171 145l10-35 18 8 32-11 51 35m-49-34 9 17-13 11 23 19m-57-37 12 16-7 10"/>
+  <path class="paper" d="M68 120h65l35-20 21-28 32-10 38 13-6 12-32-10-24 9-20 27-39 24H68z"/>
+  <path class="accent" d="M248 79l21-1 4 31-22 5z"/>
+  <path class="strong" d="m264 111 2 25"/>
+  <circle class="dot" cx="221" cy="70" r="4"/>
+  <path class="soft" d="M62 170h94m118 0h83"/>
+</svg>

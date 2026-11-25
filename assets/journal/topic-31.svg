@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Подтверждённая и требующая уточнения линии коммуникаций на плане</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#354a42" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#354a42;stroke-width:1.65}
+    .wash{fill:#b6c4b6}
+    .accent{fill:#e2b649;stroke:#354a42;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#354a42;stroke-width:1.2}
+    .line{stroke:#354a42;stroke-width:1.65}
+    .strong{stroke:#354a42;stroke-width:2.5}
+    .route{stroke:#354a42;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#354a42;stroke-width:1.1;opacity:.62}
+    .dot{fill:#354a42}
+    text{fill:#354a42;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e2e8e1" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="paper" d="M51 51h311v108H51z"/>
+  <path class="line" d="M67 67h65v36H67zm224 45h53v33h-53zm-137 1h71v35h-71z"/>
+  <path class="strong" d="M47 111h96l39-38h188"/>
+  <path class="route" d="m51 135 80-15 78-57 160 21"/>
+  <circle class="accent" cx="241" cy="73" r="12"/>
+  <path class="line" d="M241 67v7m0 5v1"/>
+  <path class="strong" d="M61 181h29"/>
+  <path class="route" d="M218 181h29"/>
+  <text x="146" y="185">Подтверждено</text>
+  <text x="306" y="185">Нужно уточнить</text>
+</svg>

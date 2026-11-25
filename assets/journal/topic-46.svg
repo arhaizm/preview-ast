@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Длинномерная пачка и обозначение её длины перед подбором платформы</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#4a493c" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#4a493c;stroke-width:1.65}
+    .wash{fill:#c8c5b3}
+    .accent{fill:#e2b649;stroke:#4a493c;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#4a493c;stroke-width:1.2}
+    .line{stroke:#4a493c;stroke-width:1.65}
+    .strong{stroke:#4a493c;stroke-width:2.5}
+    .route{stroke:#4a493c;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#4a493c;stroke-width:1.1;opacity:.62}
+    .dot{fill:#4a493c}
+    text{fill:#4a493c;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e8e7df" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="paper" d="M54 131h251v20H54zm251-25h35l25 24v21h-60z"/>
+  <path class="line" d="M316 113h17l14 16h-31zM54 145h310"/>
+  <circle class="wash" cx="80" cy="152" r="10"/>
+  <circle class="wash" cx="105" cy="152" r="10"/>
+  <circle class="wash" cx="340" cy="152" r="10"/>
+  <path class="accent" d="M40 80h256v14H40zm0 17h256v13H40z"/>
+  <path class="line" d="M68 79v32m173-32v32M40 74V51m255 23V51M40 58h255m-248-4-7 4 7 4m241-8 7 4-7 4"/>
+  <path class="route" d="M110 116v12m139-12v12"/>
+  <text x="163" y="43">Длина пачки</text>
+</svg>

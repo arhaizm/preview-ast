@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Телескопическая стрела автокрана с дополнительным гуськом и без него</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#46493d" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#46493d;stroke-width:1.65}
+    .wash{fill:#c6c3ae}
+    .accent{fill:#e2b649;stroke:#46493d;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#46493d;stroke-width:1.2}
+    .line{stroke:#46493d;stroke-width:1.65}
+    .strong{stroke:#46493d;stroke-width:2.5}
+    .route{stroke:#46493d;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#46493d;stroke-width:1.1;opacity:.62}
+    .dot{fill:#46493d}
+    text{fill:#46493d;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e9e6db" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="soft" d="M210 35v141M34 156h160m32 0h160"/>
+  <g id="carrier">
+  <path class="paper" d="M47 132h107l14 12v8H47z"/>
+  <circle class="wash" cx="67" cy="152" r="10"/>
+  <circle class="wash" cx="147" cy="152" r="10"/>
+  <path class="line" d="M55 140h96m-47-9v-13h26v13"/>
+  </g>
+  <use href="#carrier" x="192"/>
+  <path class="paper" d="m103 120 58-62 10 10-56 63zm192 0 58-62 10 10-56 63z"/>
+  <path class="line" d="m121 111 46-50m146 50 46-50"/>
+  <path class="accent" d="m354 61 39-24-30 32z"/>
+  <circle class="dot" cx="104" cy="123" r="3"/>
+  <circle class="dot" cx="296" cy="123" r="3"/>
+  <text x="110" y="179">Основная стрела</text>
+  <text x="308" y="179">С дополнительным гуськом</text>
+</svg>

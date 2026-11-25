@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Почасовая ставка и цена за рейс в таблице сравнения перевозки</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#39484b" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#39484b;stroke-width:1.65}
+    .wash{fill:#b9c9c9}
+    .accent{fill:#e2b649;stroke:#39484b;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#39484b;stroke-width:1.2}
+    .line{stroke:#39484b;stroke-width:1.65}
+    .strong{stroke:#39484b;stroke-width:2.5}
+    .route{stroke:#39484b;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#39484b;stroke-width:1.1;opacity:.62}
+    .dot{fill:#39484b}
+    text{fill:#39484b;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e1e7e7" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="paper" d="M58 44h304v124H58z"/>
+  <path class="wash" d="M58 44h304v30H58z"/>
+  <path class="line" d="M210 44v124M58 74h304M79 147h102m57 0h98"/>
+  <circle class="accent" cx="133" cy="110" r="22"/>
+  <path class="line" d="M133 98v12l8 6"/>
+  <path class="accent" d="M268 92h41l-6 17h-30zm6 17h40v-12h10l10 11v11h-60z"/>
+  <circle class="paper" cx="287" cy="119" r="5"/>
+  <circle class="paper" cx="324" cy="119" r="5"/>
+  <text x="133" y="64">За час</text>
+  <text x="293" y="64">За рейс</text>
+</svg>

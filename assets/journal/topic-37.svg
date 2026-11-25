@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Высота борта и положение ковша на схеме погрузки</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#37483d" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#37483d;stroke-width:1.65}
+    .wash{fill:#bdc9b8}
+    .accent{fill:#e2b649;stroke:#37483d;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#37483d;stroke-width:1.2}
+    .line{stroke:#37483d;stroke-width:1.65}
+    .strong{stroke:#37483d;stroke-width:2.5}
+    .route{stroke:#37483d;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#37483d;stroke-width:1.1;opacity:.62}
+    .dot{fill:#37483d}
+    text{fill:#37483d;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e7e9e3" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="soft" d="M37 165h350"/>
+  <path class="paper" d="M190 96h149l-22 44H208zM236 140h113l14 11v10H217v-10z"/>
+  <path class="wash" d="M335 113h22l20 24v15h-44z"/>
+  <circle class="paper" cx="246" cy="161" r="10"/>
+  <circle class="paper" cx="350" cy="161" r="10"/>
+  <path class="line" d="M197 103h131m10 17h15l10 13h-25zM162 97h32m-33 44h37m-27-44v44"/>
+  <path class="accent" d="M69 75h73l18-17 14 36-29 20H94l-25-12z"/>
+  <path class="strong" d="M55 113l38-12"/>
+  <path class="route" d="M163 82q18-19 45-12m1 0-8-6m8 6-10 2"/>
+</svg>

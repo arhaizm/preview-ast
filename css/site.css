@@ -1,0 +1,69 @@
+/* Styling for shared navigation and actual catalogue links. */
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 8px;
+  padding: 12px 0;
+  list-style: none;
+  font-size: 13px;
+}
+.breadcrumbs li { display: inline; }
+.breadcrumbs li > [aria-hidden] { display: inline-block; margin-inline-end: 8px; }
+.breadcrumbs a { display: inline-block; padding-block: 4px; text-decoration: underline; text-underline-offset: 3px; }
+.breadcrumbs [aria-current] { color: var(--muted); }
+.family-positions { list-style: none; margin: 0; padding: 0; }
+.family-positions li { border-top: 1px solid #e1e4e5; }
+.family-positions a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 9px;
+  min-height: 34px;
+  padding: 7px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.family-positions strong { font-weight: 680; }
+.position-note { display: block; color: var(--muted); font-size: 13px; }
+.catalog-rate, .detail-rate, .parameter-rate {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.featured .catalog-rate { margin-inline-start: auto; font-size: 15px; }
+.detail-copy .intro { margin-bottom: 8px; }
+.detail-rate { margin-bottom: 16px; font-size: clamp(20px, 2.6vw, 34px); }
+.parameter-rate { color: var(--ink); }
+.rate-note { display: block; margin-top: 3px; }
+.family-positions a:hover strong, .family-positions a:focus-visible strong {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+fieldset.fields { min-width: 0; margin: 0; padding: 0; border: 0; }
+.related ul { list-style: none; margin: 0; padding: 0; }
+.article-contact { padding-block: 28px 42px; }
+.article-contact a { text-decoration: underline; text-underline-offset: 3px; }
+.detail h1 { overflow-wrap: anywhere; }
+@media (max-width: 920px) {
+  .featured .fact {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 6px;
+    row-gap: 3px;
+  }
+  .featured .feature-fact { grid-column: 1 / -1; }
+  .featured .catalog-rate { margin-inline-start: 0; }
+}
+@media (max-width: 640px) {
+  .family-positions a { min-height: 44px; }
+}
+@media (max-width: 480px) {
+  .family-positions a { grid-template-columns: 1fr; row-gap: 3px; }
+}
+
+.diagram-caption { position: absolute; inset: auto 0 4px; text-align: center; color: #f1f2f2; font-size: 12px; pointer-events: none; }
+
+.inquiry > .formpanel > .note { margin-top: 9px; max-width: 37ch; }
+.contact-test-note { margin-bottom: 10px; font-size: 14px; font-weight: 700; }
+.contact-error { margin-top: 4px; font-size: 13px; color: #982323; }
+.formpanel [aria-invalid="true"] { border-color: #982323; }

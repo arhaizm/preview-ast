@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Зоны срезки и подсыпки между высотными отметками</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#354a42" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#354a42;stroke-width:1.65}
+    .wash{fill:#b6c4b6}
+    .accent{fill:#e2b649;stroke:#354a42;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#354a42;stroke-width:1.2}
+    .line{stroke:#354a42;stroke-width:1.65}
+    .strong{stroke:#354a42;stroke-width:2.5}
+    .route{stroke:#354a42;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#354a42;stroke-width:1.1;opacity:.62}
+    .dot{fill:#354a42}
+    text{fill:#354a42;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e2e8e1" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="paper" d="M54 44h312v122H54z"/>
+  <path class="soft" d="M65 73q73-38 118 9t100 9q31-27 70-28M65 99q73-38 118 9t100 9q31-27 70-28M65 126q73-38 118 9t100 9q31-27 70-28"/>
+  <path class="wash" d="M70 86q39-35 79-8l22 20-37 20-37-4z"/>
+  <path class="accent" d="M253 120l28-19 55-2 10 23-55 26z"/>
+  <path class="route" d="M100 101l108 19 106-7"/>
+  <circle class="dot" cx="100" cy="101" r="4"/>
+  <circle class="dot" cx="208" cy="120" r="4"/>
+  <circle class="dot" cx="314" cy="113" r="4"/>
+  <text x="110" y="183">Срезка</text>
+  <text x="308" y="183">Подсыпка</text>
+</svg>

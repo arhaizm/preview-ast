@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Поддон и условная рамка вил с отмеченными габаритами</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#37483d" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#37483d;stroke-width:1.65}
+    .wash{fill:#bdc9b8}
+    .accent{fill:#e2b649;stroke:#37483d;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#37483d;stroke-width:1.2}
+    .line{stroke:#37483d;stroke-width:1.65}
+    .strong{stroke:#37483d;stroke-width:2.5}
+    .route{stroke:#37483d;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#37483d;stroke-width:1.1;opacity:.62}
+    .dot{fill:#37483d}
+    text{fill:#37483d;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e7e9e3" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="paper" d="M95 73l113-20 76 30-111 21zM95 73v32l78 32v-33m0 33 111-21V83"/>
+  <path class="wash" d="M94 111l79 32 114-21v12l-114 22-79-31z"/>
+  <path class="line" d="m120 122 0 19m26-9v18m83-15v11m27-17v11"/>
+  <path class="accent" d="M297 132h55v8h-53l-83 17-19-4zm0 20h55v8h-53l-83 17-19-4z"/>
+  <path class="line" d="M352 126v39m-257-22v23m78-3v24m-78-27 78 24m-72-25-6 1 3 6m70 13 5 5-8 1"/>
+  <path class="route" d="M80 74v35m205-57v23m-189-14 104-24m19 2 65 28"/>
+</svg>

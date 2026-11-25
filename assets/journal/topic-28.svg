@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Пазухи фундамента и зоны обратной засыпки на разрезе</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#354a42" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#354a42;stroke-width:1.65}
+    .wash{fill:#b6c4b6}
+    .accent{fill:#e2b649;stroke:#354a42;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#354a42;stroke-width:1.2}
+    .line{stroke:#354a42;stroke-width:1.65}
+    .strong{stroke:#354a42;stroke-width:2.5}
+    .route{stroke:#354a42;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#354a42;stroke-width:1.1;opacity:.62}
+    .dot{fill:#354a42}
+    text{fill:#354a42;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e2e8e1" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="wash" d="M34 107h86l35 51h107l34-51h90v67H34z"/>
+  <path class="accent" d="M120 107h65v48h-32zm115 0h61l-34 48h-27z"/>
+  <path class="paper" d="M189 52h42v88h24v20h-90v-20h24z"/>
+  <path class="line" d="M34 107h86m176 0h90M75 129h58m153 0h58m-94 16h24m-134 0h25"/>
+  <path class="route" d="M113 92h74m46 0h76m-179 28h55m48 0h60"/>
+  <text x="151" y="190">Пазухи</text>
+  <text x="258" y="190">Пазухи</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Точка выгрузки и препятствия над кузовом самосвала на схеме</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#39484b" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#39484b;stroke-width:1.65}
+    .wash{fill:#b9c9c9}
+    .accent{fill:#e2b649;stroke:#39484b;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#39484b;stroke-width:1.2}
+    .line{stroke:#39484b;stroke-width:1.65}
+    .strong{stroke:#39484b;stroke-width:2.5}
+    .route{stroke:#39484b;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#39484b;stroke-width:1.1;opacity:.62}
+    .dot{fill:#39484b}
+    text{fill:#39484b;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e1e7e7" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="wash" d="M339 50h41v109h-41z"/>
+  <path class="line" d="M339 50h41v109h-41zM35 160h351M50 57h279m-252 0-20 19m66-19-20 19m66-19-20 19m66-19-20 19m66-19-20 19"/>
+  <path class="paper" d="M89 111h125l-6 27H99zm117 27h28v-29h31l22 25v20H84v-16z"/>
+  <path class="line" d="M243 116h16l14 14h-30zm-145 3h111"/>
+  <circle class="paper" cx="113" cy="153" r="10"/>
+  <circle class="paper" cx="145" cy="153" r="10"/>
+  <circle class="paper" cx="261" cy="153" r="10"/>
+  <path class="accent" d="M296 153h32v8h-32z"/>
+  <path class="route" d="M311 150V65m-6 10 6-10 6 10"/>
+  <text x="295" y="183">Точка выгрузки</text>
+</svg>

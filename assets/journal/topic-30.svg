@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <title>Корпус экскаватора и соседние препятствия на плане рабочей зоны</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#354a42" stroke-width=".55" opacity=".18"/>
+    </pattern>
+  </defs>
+  <style>
+    .paper{fill:#f5f4ec;stroke:#354a42;stroke-width:1.65}
+    .wash{fill:#b6c4b6}
+    .accent{fill:#e2b649;stroke:#354a42;stroke-width:1.4}
+    .water{fill:#abbdc4;stroke:#354a42;stroke-width:1.2}
+    .line{stroke:#354a42;stroke-width:1.65}
+    .strong{stroke:#354a42;stroke-width:2.5}
+    .route{stroke:#354a42;stroke-width:1.4;stroke-dasharray:4 3}
+    .soft{stroke:#354a42;stroke-width:1.1;opacity:.62}
+    .dot{fill:#354a42}
+    text{fill:#354a42;font:600 11px sans-serif;text-anchor:middle}
+  </style>
+  <path fill="#e2e8e1" d="M0 0h420v210H0z"/>
+  <path fill="url(#grid)" d="M0 0h420v210H0z"/>
+  <path class="paper" d="M49 42h322v122H49z"/>
+  <path class="wash" d="M49 42h72v62H49zm266 46h56v76h-56z"/>
+  <path class="line" d="M49 42h72v62H49zm266 46h56v76h-56z"/>
+  <path class="soft" d="m61 54 26 26m-21-5 19 19m246 8 27 27m-27-6 27 27"/>
+  <path class="wash" d="M49 135h76v21H49z"/>
+  <path class="route" d="M51 145h74"/>
+  <path class="accent" d="M281 146h28v13h-28z"/>
+  <path class="line" d="M285 149h19v7h-19z"/>
+  <path class="soft" d="m284 67 8-11 10 11z"/>
+  <path class="route" d="M135 100a45 45 0 0 1 57 55m63-73h35v25h-35zm-15 58h34v18h-34z"/>
+  <rect class="paper" x="144" y="116" width="53" height="29" rx="6"/>
+  <path class="accent" d="M144 122h15v17h-15z"/>
+  <path class="line" d="M159 131h46l19-17m-6-5 11 3-3 7"/>
+  <circle class="dot" cx="169" cy="131" r="3"/>
+  <circle class="dot" cx="273" cy="95" r="3"/>
+  <circle class="dot" cx="257" cy="149" r="3"/>
+  <text x="166" y="109">А</text>
+  <text x="86" y="130">Проезд</text>
+  <text x="273" y="75">Б</text>
+  <text x="257" y="134">В</text>
+  <text x="297" y="143">Кузов</text>
+  <text x="210" y="187">А — начало · Б — следующая позиция · В — передача в кузов</text>
+</svg>
